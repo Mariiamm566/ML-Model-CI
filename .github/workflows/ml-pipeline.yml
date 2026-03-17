@@ -25,7 +25,12 @@ jobs:
 
       - name: Linter check
         run: |
-          python -m py_compile $(find . -name "*.py")
+          files=$(find . -name "*.py")
+          if [ -n "$files" ]; then
+            python -m py_compile $files
+          else
+            echo "No Python files to check"
+          fi
 
       - name: Model dry test
         run: |
