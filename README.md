@@ -1,6 +1,6 @@
 # ML Pipeline Assignment
 
-This project implements a GitHub Actions pipeline for validating a machine learning environment.
+This assignment implements a GitHub Actions pipeline for validating a machine learning environment.
 
 ## Pipeline Description
 - Installs dependencies from requirements.txt
